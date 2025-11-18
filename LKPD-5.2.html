@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 5</title>
+</head>
+<h1>LKPD 5</h1>
+<!--Refleksi-->
+
+<!--Apa keuntungan menggunakan array dibanding variabel terpisah?-->
+<!--Keuntungan menggunakan array dibandingkan variabel terpisah adalah memudahkan pengelolaan
+ banyak data dalam satu wadah, sehingga kode menjadi lebih ringkas, efisien, dan mudah diolah,
+ terutama untuk data yang perlu diproses secara berurutan atau memerlukan akses langsung ke elemen
+ tertentu. Array memungkinkan Anda menyimpan data yang sama dalam satu nama, sementara variabel
+ terpisah memerlukan deklarasi terpisah untuk setiap nilai, yang bisa sangat boros waktu dan kode
+ jika datanya banyak.-->
+
+<!--Bagaimana cara menambahkan elemen baru ke array?-->
+<!--Cara paling umum adalah dengan menambahkan di akhir (misalnya menggunakan push() di JavaScript
+ atau append() di Python) atau di awal (misalnya dengan unshift() di JavaScript). Metode lain
+ seperti splice() atau insert() memungkinkan Anda menambahkan elemen di posisi indeks tertentu.-->
+<body>
+    <script>
+       document.write ("Muhamad Dehan Roziku X PPLG 2");
+      let nilai = [80, 90, 75, 85, 95];
+      let total = 0;
+      for (let i = 0; i < nilai.length; i++) {
+        total += nilai[i];
+      }
+      let rataRata = total / nilai.length;
+
+      console.log("Total nilai: " + total);
+      console.log("Rata-rata nilai: " + rataRata);
+    </script>
+</body>
+</html>
