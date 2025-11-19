@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 6</title>
+</head>
+<h1>LKPD 6</h1>
+<!--Refleksi-->
+
+<!--Apa fungsi document.getElementById()?-->
+<!--digunakan untuk mengambil dan memilih satu elemen HTML spesifik dari halaman web berdasarkan
+ nilai atribut id uniknya. Setelah elemen tersebut diambil, Anda bisa membaca atau memodifikasi
+ konten dan gayanya menggunakan JavaScript.-->
+
+<!--Bagaimana cara menambahkan elemen baru ke halaman?-->
+<!--Cara menambahkan elemen baru ke halaman bergantung pada platform yang digunakan. Anda bisa
+ melakukannya dengan mengklik menu "Elemen" di aplikasi desain seperti Canva, menggunakan opsi
+ "Sisipkan" > "Header & Footer" di program seperti Microsoft Excel, atau dengan menulis kode
+ JavaScript untuk membuat dan menambahkannya ke Document Object Model (DOM) untuk pengembangan web.-->
+<body>
+    <button onclick="tambahElemen()">Tambah Elemen</button>
+    <!-- Div kosong tempat elemen baru akan ditambahkan -->
+    <div id="kontainer"></div>
+    <script>
+        function tambahElemen() {
+            // Ambil elemen div dengan id 'kontainer'
+            var kontainer = document.getElementById("kontainer");
+            
+            // Buat elemen baru, misalnya sebuah paragraf
+            var elemenBaru = document.createElement("p");
+            
+            // Tambahkan teks ke dalam paragraf
+            elemenBaru.textContent = "Ini adalah elemen baru yang ditambahkan!";
+            
+            // Tambahkan elemen baru ke dalam div
+            kontainer.appendChild(elemenBaru);
+        }
+    </script>
+</body>
+</html>

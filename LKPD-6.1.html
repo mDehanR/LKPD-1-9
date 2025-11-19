@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 6</title>
+</head>
+<h1>LKPD 6</h1>
+<!--Refleksi-->
+
+<!--Apa fungsi document.getElementById()?-->
+<!--digunakan untuk mengambil dan memilih satu elemen HTML spesifik dari halaman web berdasarkan
+ nilai atribut id uniknya. Setelah elemen tersebut diambil, Anda bisa membaca atau memodifikasi
+ konten dan gayanya menggunakan JavaScript.-->
+
+<!--Bagaimana cara menambahkan elemen baru ke halaman?-->
+<!--Cara menambahkan elemen baru ke halaman bergantung pada platform yang digunakan. Anda bisa
+ melakukannya dengan mengklik menu "Elemen" di aplikasi desain seperti Canva, menggunakan opsi
+ "Sisipkan" > "Header & Footer" di program seperti Microsoft Excel, atau dengan menulis kode
+ JavaScript untuk membuat dan menambahkannya ke Document Object Model (DOM) untuk pengembangan web.-->
+<body>
+    <p id="paragraf">Ini adalah paragraf yang warna teksnya akan diubah saat tombol diklik.</p>
+    <button onclick="ubahWarna()">Ubah Warna Teks</button>
+    <script>
+       function ubahWarna() {
+            // Ambil elemen paragraf
+            var paragraf = document.getElementById("paragraf");
+            
+            // Daftar warna yang bisa dipilih
+            var warna = ["red", "green", "blue", "purple", "orange"];
+            
+            // Pilih warna secara acak dari daftar
+            var warnaAcak = warna[Math.floor(Math.random() * warna.length)];
+            
+            // Ubah warna teks paragraf
+            paragraf.style.color = warnaAcak;
+        }
+    </script>
+</body>
+</html>

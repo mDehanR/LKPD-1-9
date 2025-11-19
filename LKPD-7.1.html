@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 7</title>
+</head>
+<h1>LKPD 7</h1>
+<!--Refleksi-->
+
+<!--Apa perbedaan onclick dan onmouseover?-->
+<!--Perbedaan utama onclick dan onmouseover adalah pada jenis interaksinya: onclick merespons saat
+ pengguna mengklik elemen, sedangkan onmouseover merespons saat kursor mouse diarahkan ke atas
+ elemen. onclick digunakan untuk tindakan permanen seperti mengirim formulir atau mengubah konten,
+ sementara onmouseover sering digunakan untuk efek visual seperti mengubah warna atau menampilkan
+ tooltip.-->
+
+<!--Mengapa event penting untuk interaktivitas?-->
+<!--Event penting untuk interaktivitas karena memungkinkan peserta untuk terlibat secara aktif
+ sehingga menciptakan pengalaman yang lebih personal, dinamis, dan mudah diingat.-->
+<body>
+    <p id="paragraf">Ini adalah paragraf yang dapat disembunyikan dengan tombol.</p>
+
+    <button onclick="sembunyikanParagraf()">Sembunyikan Paragraf</button>
+
+    <script>
+        function sembunyikanParagraf() {
+            // Ambil elemen paragraf berdasarkan ID
+            var paragraf = document.getElementById("paragraf");
+            
+            // Sembunyikan paragraf dengan mengubah style display menjadi 'none'
+            paragraf.style.display = "none";
+        }
+    </script>
+</body>
+</html>
